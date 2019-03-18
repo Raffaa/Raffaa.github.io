@@ -17,13 +17,28 @@ body {
     cursor: default;
 }
 
+
 .hey {
-  color: #FFFFFF;
+  color: #2b2b2b;
   font-family: "Inter";
-    font-size: 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    cursor: default;
+  font-size: 1vw;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  user-select: all;
 }
+
+.ijustmetyou {
+  color: #2b2b2b;
+  font-family: "Inter";
+  font-size: 1vw;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+  user-select: all;
+}
+
+a {
+	color: inherit;
+}
+
