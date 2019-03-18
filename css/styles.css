@@ -19,6 +19,7 @@ body {
 
 body.newbg {
     background-image:url(/sadpepe.png);
+    background-size: cover;
 }
 
 
