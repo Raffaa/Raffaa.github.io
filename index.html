@@ -13,10 +13,10 @@
 </head>
 
 <body>
-  <div class="counter"></div>
-  </br>
-  <div class="hey">Second you lost in this page...</div>
-  <script>
+	  <p class="hey">SECONDS YOU LOST IN THIS PAGE...</p>
+	  <div class="counter"></div>
+	  <p class="ijustmetyou">Maybe you want to look at here -> <a href="http://simoneraffaelli.it">simoneraffaelli.it</a></p>
+	  <script>
   var counter = document.querySelector('.counter'),
     map = { M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 },
     c = 1,
@@ -27,9 +27,7 @@
             loop()
         }, 1000)
     }
-
 setTimeout(loop, 1400)
-
 function roman(num) {
   let roman = '', i
   for ( i in map ) {
