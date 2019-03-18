@@ -17,6 +17,10 @@ body {
     cursor: default;
 }
 
+body.newbg {
+    background-image:url(sadpepe.png);
+}
+
 
 .hey {
   color: #2b2b2b;
