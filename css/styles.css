@@ -16,3 +16,15 @@ body {
     user-select: none;
     cursor: default;
 }
+
+.hey {
+  color: #000000;
+  font-family: "Inter";
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+    cursor: default;
+}
