@@ -13,20 +13,31 @@
 </head>
 
 <body>
-  <header>
-  <h1>Raffaelli Simone</h1>
-  </header>
+  .counter
   <script>
-  function update(e){
-  var x = e.clientX || e.touches[0].clientX
-  var y = e.clientY || e.touches[0].clientY
+  var counter = document.querySelector('.counter'),
+    map = { M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 },
+    c = 1,
+    loop = () => {
+        setTimeout(() => {
+            counter.innerHTML = roman(c)
+            c++
+            loop()
+        }, 380)
+    }
 
-  document.documentElement.style.setProperty('--cursorX', x + 'px')
-  document.documentElement.style.setProperty('--cursorY', y + 'px')
+setTimeout(loop, 1400)
+
+function roman(num) {
+  let roman = '', i
+  for ( i in map ) {
+    while ( num >= map[i] ) {
+      roman += i;
+      num -= map[i];
+    }
+  }
+  return roman;
 }
-
-document.addEventListener('mousemove',update)
-document.addEventListener('touchmove',update)
   </script>
 </body>
 </html>
